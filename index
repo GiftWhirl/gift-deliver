@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Delivery Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Gift Delivery Service!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Your Gifts Delivered with Love</h2>
+        <p>Choose from a variety of gifts and have them delivered to your loved ones.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="product">
+            <h3>Birthday Gift Delivery</h3>
+            <p>Surprise your friends and family on their special day!</p>
+            <button onclick="orderService('Birthday Gift Delivery')">Order Now</button>
+        </div>
+        <div class="product">
+            <h3>Holiday Gift Delivery</h3>
+            <p>Make the holidays brighter for your loved ones!</p>
+            <button onclick="orderService('Holiday Gift Delivery')">Order Now</button>
+        </div>
+        <div class="product">
+            <h3>Custom Gift Delivery</h3>
+            <p>Create a personalized gift for any occasion!</p>
+            <button onclick="orderService('Custom Gift Delivery')">Order Now</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gift Delivery Service. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
